@@ -21,7 +21,7 @@ const listener = app.listen(process.env.PORT, () => {
 
 const Discord = require ("discord.js")
 const moment = require ("moment")
-const DarkMan = new Discord.Client();
+const Anders = new Discord.Client();
 const prefix = "A!";
 
 
@@ -69,7 +69,7 @@ Anders.on("guildMemberAdd", member => {
   const channel = member.guild.channels.cache.find(
     channel => channel.name === "・┊welcome"
   );
-  let DarkMan = member.user.avatarURL();
+  let Anders = member.user.avatarURL();
   if (!channel) return;
   const joinembed = new Discord.MessageEmbed()
     .setTitle(``)
