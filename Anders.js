@@ -22,7 +22,7 @@ const listener = app.listen(process.env.PORT, () => {
 const Discord = require ("discord.js")
 const moment = require ("moment")
 const DarkMan = new Discord.Client();
-const prefix = "D!";
+const prefix = "A!";
 
 
 Anders.login("");
@@ -55,7 +55,7 @@ const embed = new Discord.MessageEmbed()
 **[ click here ](https://discord.gg/tstcyhgQeS)**
  `)
     
-    .setFooter(` Remix Bot ✨ | Coded by , DarkMan`, DarkMan.user.avatarURL)
+    .setFooter(` Remix Bot ✨ | Coded by , Anders`, Anders.user.avatarURL)
     .setURL("https://discord.gg/YSx9p3e7F8")
       
     message.channel.send(embed);
