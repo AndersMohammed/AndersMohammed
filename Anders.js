@@ -39,7 +39,7 @@ Anders.login("");
 
 //////////
 
-DarkMan.on("message", message => {
+Anders.on("message", message => {
 if (message.content === prefix +"help") {
 const embed = new Discord.MessageEmbed()
 .setColor("BLACK")
