@@ -25,13 +25,13 @@ const Anders = new Discord.Client();
 const prefix = "A!";
 
 
-Anders.login("");
+Anders.login("MTE0MjU0NDc1NjM0NjQ2MjIxOA.Gws7m1.QeW4VcNkt6xqfs05bOhTp7kwamCADtxMAd1H-8");
 .on("ready", async () => {
   console.log(`Logged in as ${Anders.user.username}!`);
   Anders.user.setStatus("ONLINE");
   Anders.user.setActivity(`${prefix}help`, { type: "WATCHING" });
   Anders.guilds.cache.forEach(g => {
-    if (g.member(DarkMan.user).hasPermission("ADMINISTRATOR")) {
+    if (g.member(Anders.user).hasPermission("ADMINISTRATOR")) {
       g.fetchInvites().then(guildInvites => {});
     }
   });
