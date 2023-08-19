@@ -27,7 +27,7 @@ const prefix = "A!";
 
 Anders.login("");
 .on("ready", async () => {
-  console.log(`Logged in as ${DarkMan.user.username}!`);
+  console.log(`Logged in as ${Anders.user.username}!`);
   Anders.user.setStatus("ONLINE");
   Anders.user.setActivity(`${prefix}help`, { type: "WATCHING" });
   Anders.guilds.cache.forEach(g => {
